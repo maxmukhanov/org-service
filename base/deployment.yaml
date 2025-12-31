@@ -15,3 +15,5 @@ spec:
       containers:
       - name: org-service 
         image: p6m.jfrog.io/ybor-studio-docker/applications/organization-service-server:placeholder
+      imagePullSecrets:
+        - name: dockerconfig
