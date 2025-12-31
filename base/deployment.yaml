@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: org-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: org-service
+  template:
+    metadata:
+      labels:
+        app: org-service
+    spec:
+      containers:
+      - name: org-service 
+        image: p6m.jfrog.io/ybor-studio-docker/applications/organization-service-server:placeholder
